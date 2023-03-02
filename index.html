@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="questionnaire">
+            <div class="questionnaire__window" id="window">
+                <div class="questionnaire__container">
+                <form action="#" id="form">
+                    <h1 class="questionnaire__title">questionnaire</h1>
+                    <div class="questionnaire__item">
+                        <label for="formName" class="questionnaire__label">Name: </label>
+                        <input id="formName" type="text" name="name" class="questionnaire__input _req">
+                    </div>
+                    <div class="questionnaire__item ">
+                        <label for="formMail" class="questionnaire__label">E-mail: </label>
+                        <input id="formMail" type="text" name="mail" class="questionnaire__input _req _email">
+                    </div>
+                    <div class="questionnaire__item questionnaire__margin-top20">
+                        <div class="questionnaire__options">
+                            <h2 class="questionnaire__options-title">Sex:</h2>
+                            <div class="questionnaire__options-item">
+                                <input id="formMale" type="radio" checked value="male" name="sex" class="questionnaire__option-input">
+                                <label for="formMale" class="questionnaire__option-label">male</label>
+                            </div>
+                            <div class="questionnaire__options-item">
+                                <input id="formFemale" type="radio" value="female" name="sex" class="questionnaire__option-input">
+                                <label for="formFemale" class="questionnaire__option-label">female</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="questionnaire__item questionnaire__item-top questionnaire__margin-top20">
+                        <label for="formMessage" class="questionnaire__textarea-label">message: </label>
+                        <textarea id="formMessage" name="message" class="questionnaire__input questionnaire__textarea-input _req"></textarea>  
+                    </div>
+                    <div class="questionnaire__item">
+                        <div class="questionnaire__age-label">age:</div>
+                        <select name="age" id="" class="select">
+                            <option value="до 18" selected>up to 18 years old</option>
+                            <option value="от 18 до 25">from 18 to 25 years old</option>
+                            <option value="больше 45">more than 45 years</option>
+                        </select>
+                    </div>
+                    <div class="questionnaire__item">
+                        <h2 class="questionnaire__photo-title">photo: </h2>
+                        <div class="file">
+                            <div class="questionnaire__file-item">
+                                <input accept=".png, .jpg, .jpeg, .gif" id="formImage" type="file" name="image" class="questionnaire__file-input">
+                                <button class="questionnaire__file-btn">select...</button>
+                            </div>
+                            <div class="questionnaire__file-preview" id="formPreview"></div>
+                        </div>
+                    </div>
+                    <div class="questionnaire__item">
+                        <div class="questionnaire__checkbox">
+                            <input id="formAgreement" type="checkbox"  name="agreement" class="questionnaire__checkbox-input _req">
+                            <label for="formAgreement" class="questionnaire__checkbox-label">agreement to send data</label>
+                        </div>
+                    </div>
+                    <div class="questionnaire__button-submit">
+                        <button type="submit" class="questionnaire__button">submit</button>
+                    </div>
+                    </form>
+                </form>
+            </div>    
+        </div>
+        </div>
+        
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
